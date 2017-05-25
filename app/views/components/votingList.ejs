@@ -1,0 +1,11 @@
+<section>
+  <h1>FCC-Voting</h1>
+  <p>Bellow are polls hosted by fcc-voting</p>
+  <p>Select a poll to see the results and vote, or sign-in to make a new poll.</p>
+
+  <ul>
+    <% for(var i = 0, l = votingList.length; i < l; i ++) { %>
+      <li><%= votingList[i] %></li>
+    <% } %>
+  </ul>
+</section>

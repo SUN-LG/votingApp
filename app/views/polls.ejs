@@ -1,0 +1,17 @@
+<%- include('header') %>
+
+<section>
+  <h1>FCC-Voting</h1>
+  <p>Bellow are polls hosted by fcc-voting</p>
+  <p>Select a poll to see the results and vote, or sign-in to make a new poll.</p>
+
+  <div class="loading"><img src="" alt=""></div>
+
+  <ul>
+    <% for(var i = 0, l = votingPolls.length; i < l; i ++) { %>
+      <li><%= votingPolls[i] %></li>
+    <% } %>
+  </ul>
+</section>
+
+<%- include('footer') %>

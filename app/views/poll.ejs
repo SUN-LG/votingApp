@@ -1,0 +1,22 @@
+<%- include(header) %>
+
+<section>
+  <h2><%= poll.title %></h2>
+  <p><strong>I'd like to vote for ...:</strong></p>
+
+  <select name="" id="">
+    <% for(var i = 0, l = poll.options.length; i < l; i++) { %>
+      <option value="<%= poll.options[i] %>"></option>
+    <% } %>
+  </select>
+
+  <button type="submit" name="button">Submit</button>
+  <button type="button" name="button">Share on Twitter</button>
+</section>
+
+<aside class="">
+
+</aside>
+
+
+<%- include(footer) %>
